@@ -4,9 +4,10 @@ spring:
   application:
     name: zuul
 zuul:
-  ignoredServices: "*"
+  ignoredServices: '*'
   prefix: /services
   routes:
-    consumer: /plat/**
-    
+   plat:
+    path: /plat/**
+    serviceID: plat-service
 
